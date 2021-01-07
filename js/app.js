@@ -49,18 +49,18 @@ function loadList(list){
 document.addEventListener("keyup", function(event){
     if(event.keyCode == 13){
         const resol = inputResol.value;
-
+        
         if(resol) {
-            addResol(resol);
+            addResol(resol, id, false, false);
             LIST.push ({
                 name: resol,
                 id: id,
                 status: false,
                 deleted: false
             });
-
-            localStorage.setItem("RESOLUCIONES", JSON.stringify(LIST));
             id++;
+            localStorage.setItem("RESOLUCIONES", JSON.stringify(LIST));
+            
         }
         inputResol.value = "";   
     }
@@ -91,6 +91,8 @@ function addResol(resol, id, status, deleted) {
 list.addEventListener("click", function(event){
     const element = event.target;
     const elementJob = element.attributes.job.value;
+
+    console.log(elementJob);
 
     if (elementJob == "complete"){
         completeResol(element);
@@ -123,6 +125,9 @@ function completeResol(resol){
 function removeResol(resol){
     resol.parentNode.parentNode.removeChild(resol.parentNode);
 
+    console.log(LIST[resol.id].deleted);
+
     LIST[resol.id].deleted = true;
     localStorage.setItem("RESOLUCIONES", JSON.stringify(LIST));
+
 }

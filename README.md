@@ -32,5 +32,5 @@ Para iniciar, puedes clonar cualquiera de las siguientes ramas/branches:
 
 - Estructura `html` y estilo con `css`, antes del código:
 <br/><br/>
-<img src="https://github.com/the-code-loops/2021-Proy1-Resoluciones/blob/kit-inicio-css-html/src/proy1-css-html.png" width="460px">
+<img src="https://github.com/the-code-loops/2021-Proy1-Resoluciones/blob/main/src/proy1-css-html.png" width="460px">
 

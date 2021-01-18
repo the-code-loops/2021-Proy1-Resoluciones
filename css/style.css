@@ -1,0 +1,135 @@
+:root {
+    --resol-yellow: rgb(232, 194, 58);
+    --resol-skyblue: #47cdf2ed;
+    --resol-grey: rgba(111, 111, 111, 0.271);
+    --resol-grey-bl: rgba(221, 224, 227, 0.216);
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: 'Advent Pro', sans-serif;
+    color: rgb(222, 219, 219);
+}
+
+.container{
+    padding:10px;
+    width:500px;
+    margin:0 auto;
+}
+
+.header-bg{
+    width:500px;
+    height: 200px;
+    background-image: url('../img/bg2021.png');
+    background-size: 110% 100%;
+    border-radius: 42px 42px 0 0;
+    position: relative;
+}
+
+#date{
+    position: absolute;
+    bottom: 1px;
+    left: 10px;
+    color: rgb(42, 42, 42);
+    font-size: 25px;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.resolutions{
+    width:500px;
+    height: 571px;
+    max-height: 571px;
+    background-color: var(--resol-grey);
+    overflow: auto;
+}
+
+.resolutions::-webkit-scrollbar { 
+    display: none; 
+}
+
+.resolutions ul{
+    padding:0;
+    margin:0;
+}
+
+/* ------ item: iconos y descripción ------ */
+.item{
+    width:500px;
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(98, 120, 122, 0.305);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item .checked{
+    position: absolute;
+    font-size: 25px;
+    padding-left:5px;
+    left:15px;
+    top:10px;
+}
+
+.item .done{
+    color: var(--resol-skyblue);
+}
+
+.item p.desc{
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size: 20px;
+    left:50px;
+    top:12px;
+    max-width: 300px;
+}
+
+.item .trash{
+    position: absolute;
+    font-size: 25px;
+    right:15px;
+    top:10px;
+}
+
+.item .icon:hover{
+    color: var(--resol-yellow);
+    cursor: pointer;
+}
+
+/* --------- agregar un item --------- */
+
+.add-item{
+    position: relative;
+    width: 480px;
+    height:40px;
+    border-radius: 0 0 42px 42px;
+    padding: 10px;
+    background-color: var(--resol-grey-bl);
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.add-item .icon{
+    position: absolute;
+    font-size: 28px;
+    color: var(--resol-skyblue);
+    padding-left:13px;
+    bottom: 19px;
+}
+
+.add-item input{
+    position: absolute;
+    left: 50px;
+    height: 35px;
+    width: 310px;
+    background-color: transparent;
+    border: none;
+    font-size: 21px;
+    padding-left:10px;
+    font-family: 'Advent Pro', sans-serif;
+    color: white;
+}

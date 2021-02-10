@@ -23,10 +23,14 @@ Para iniciar, puedes clonar cualquiera de las siguientes ramas/branches:
 **IMPORTANTE**: resolveremos este proyecto en Javascript, aquí puedes encontrar el [vídeo]().
 
 ## Tus tareas
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+- [ ] Obtener la fecha actual con Mostrar la fecha actual utilizando el método `toLocaleString()` y mostrarla en el elemento html con `id: date`   
+(ref: [mdn](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Date/toLocaleString), [locale planet](https://www.localeplanet.com/java/es-PE/index.html))
+
+- [ ] Crear una función que tome los datos de la *resolución* ingresada y la agregue a la lista de resoluciones, luego de que el usuario dio clic en `enter`.   
+Para esto debes agregar un `eventListener`, recuerda que la *resolución* ingresada es obtenida del elemento html con `id: input`.
+
+- [ ] Crea una función que tome la tarea/resolución ingresada y la muestre en la lista!
+- [ ] 
 
 ## Vista previa
 

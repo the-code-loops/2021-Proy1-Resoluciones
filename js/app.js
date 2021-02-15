@@ -24,7 +24,6 @@ const today = new Date();
 
 date.innerHTML = today.toLocaleDateString("es-PE", options);
 
-
 /**** Validación ****/
 if (data) {
     LIST = JSON.parse(data);
@@ -34,7 +33,6 @@ if (data) {
     LIST= [];
     id = 0;
 }
-
 
 /**** Funciones ****/
 //cargar contenido de lista
@@ -129,5 +127,4 @@ function removeResol(resol){
 
     LIST[resol.id].deleted = true;
     localStorage.setItem("RESOLUCIONES", JSON.stringify(LIST));
-
 }

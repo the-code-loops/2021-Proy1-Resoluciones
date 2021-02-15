@@ -72,7 +72,6 @@ function addResol(resol, id, status, deleted) {
 
     const STAT = status ? DONE : UNDONE;
     const STYLE = status ? "done" : "not";
-
     const item = `
         <li class="item">
             <ion-icon class="icon checked ${STYLE}" job="complete" name="${STAT}" id=${id}></ion-icon>
